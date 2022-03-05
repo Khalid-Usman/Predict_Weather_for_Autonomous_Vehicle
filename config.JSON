@@ -1,0 +1,41 @@
+{
+
+"image_width": 150,
+"image_height": 50,
+"image_channel": 3, 
+"num_branches": 7,
+"num_classes": [4, 2, 3, 5, 4, 4, 3],
+"batch_size": 32,
+"epochs": 10,
+"filters": 32, 
+"num_initial_blocks": 3, 
+"num_branching_blocks": 2,
+"split_data": "systematic", 
+
+"path": "/media/maanz-ai/w/BHE_data/",
+"full_path": "/media/maanz-ai/w/BHE_data/full_data.csv",
+"train_path": "/media/maanz-ai/w/BHE_data/train_data.csv",
+"valid_path": "/media/maanz-ai/w/BHE_data/valid_data.csv",
+"test_path": "/media/maanz-ai/w/BHE_data/test_data.csv",
+
+"sampling_train_ratio": [1, 1, 1, 1, 1, 1, 1],
+"sampling_valid_ratio": [1, 1, 1, 1, 1, 1, 1],
+
+"dataset_dict": {"None": 0,
+                 "No Impact": 0,
+                 "25%": 1,
+                 "75%": 2,
+                 "99%": 3,
+                 "No Low Sun": 4
+                },
+
+"categories": ["Blockage", "Blur","Fog", "Impact_of_Sun", "Precipitation", "Splashes", "Sun_Ray"],
+  
+"remove_dirs": ["All None", "data.csv"],
+
+"model_checkpoint_path": "./model_checkpoint",
+"model_output_path": "./BHE_VGG16.h5",
+
+"test_image_path": "/media/maanz-ai/w/BHE_data/Sun Ray/25%/MFK5_D025185_20210105_092522_PDX-X064RC02-A06006-V120321F_VIU01_000006_frame00000006_camera000_image00461777.png"
+
+}
